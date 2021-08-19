@@ -2,10 +2,10 @@ input: ./
 output: .retype
 url: retype.com
 
-branding:
-  logo: /static/retype-logo.svg
-  logoDark: /static/retype-logo-dark.svg
-  label: v1.8.2
+branding   :
+  logo     :    /static/retype-logo.svg
+  logoDark :    /static/retype-logo-dark.svg
+  label    :    v1.8.2
 
 meta:
   title: " | Retype - Generate publish and share documentation"
