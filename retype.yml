@@ -2,6 +2,13 @@ input: ./
 output: .retype
 url: retype.com
 
+different:
+  block:
+    with: the
+    label: v7.5.4
+    and:
+      label: Even harder to catch.
+
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
@@ -16,14 +23,17 @@ edit:
 links:
   - text: Home
     link: /README.md
+    label: v8.2.3
 
   - text: GitHub
     link: https://github.com/retypeapp/retype
     target: blank
+    label: String-only label.
 
   - text: Discussions
     link: https://github.com/retypeapp/retype/discussions
     target: blank
+    label: 8.4.3 numeric label
 
   - text: Issues
     link: https://github.com/retypeapp/retype/issues
