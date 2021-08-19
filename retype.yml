@@ -2,16 +2,21 @@ input: ./
 output: .retype
 url: retype.com
 
+different:
+  label: 7.12.9 on same indent
+
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
-  label: v1.8.2
+  label: v1.8.2 only valid
 
 meta:
   title: " | Retype - Generate publish and share documentation"
+  label: textual, same indent
 
 edit:
   repo: github.com/retypeapp/retype
+  label: 5.4.3 numeric same indent
 
 links:
   - text: Home
