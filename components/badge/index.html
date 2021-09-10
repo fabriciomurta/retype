@@ -9,29 +9,29 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Badge | Retype - Generate, publish, and share documentation</title>
-    <meta name="title" content="Badge | Retype - Generate, publish, and share documentation">
+    <title>Badge | Retype - Generate publish and share documentation</title>
+    <meta name="title" content="Badge | Retype - Generate publish and share documentation">
     <meta name="description" content="Similar to a Button, the Badge component uses the same syntax as a hyperlink, but is prefixed with a" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/components/badge/">
-    <meta property="og:title" content="Badge | Retype - Generate, publish, and share documentation">
+    <meta property="og:title" content="Badge | Retype - Generate publish and share documentation">
     <meta property="og:description" content="Similar to a Button, the Badge component uses the same syntax as a hyperlink, but is prefixed with a">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/components/badge/">
-    <meta property="twitter:title" content="Badge | Retype - Generate, publish, and share documentation">
+    <meta property="twitter:title" content="Badge | Retype - Generate publish and share documentation">
     <meta property="twitter:description" content="Similar to a Button, the Badge component uses the same syntax as a hyperlink, but is prefixed with a">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css" rel="stylesheet" />
+    <link href="/resources/css/retype.css?v=1.9.684629610683" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js" defer></script>
-    <script type="text/javascript" src="/resources/js/retype.js" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.9.684629610683" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.9.684629610683" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -51,7 +51,7 @@
                         <img class="max-h-10 dark:hidden md:inline-block" src="/static/retype-logo.svg">
                         <img class="max-h-10 hidden dark:inline-block" src="/static/retype-logo-dark.svg">
                     </span>
-                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.7</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.9.0</span>
             </div>
 
             <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -422,6 +422,62 @@
 </tbody>
 </table>
 <hr />
+<doc-anchor-target id="target">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#target">#</doc-anchor-trigger>
+        <span>Target</span>
+    </h2>
+</doc-anchor-target>
+<p>Sets the <code v-pre>target</code> attribute of the badge and specifies which window or tab to open the link into.</p>
+<p><a href="https://retype.com/" target="_blank" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>Retype</span>
+</a></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">[!badge target=&quot;blank&quot; text=&quot;Retype&quot;](https://retype.com/)</code></pre>
+</doc-codeblock></div>
+<p>If no <code v-pre>target</code> is configured, the link will open in the current tab.</p>
+<p>The <code v-pre>target</code> can be set to any value, although <code v-pre>blank</code> is common and will open the link in a new tab. Retype will automatically transform the value <code v-pre>blank</code> into <code v-pre>_blank</code> which is the actual value required by the browser to indicate that a hyperlink should be opened in a new tab.</p>
+<p>There are several other values that may be prefixed with an <code v-pre>_</code> character, including <code v-pre>self</code>, <code v-pre>parent</code>, and <code v-pre>top</code>. The following table demonstrates some common scenarios and naming convention used by Retype to normalize the <code v-pre>target</code> values.</p>
+<table class="comfortable">
+<thead>
+<tr>
+<th>Config <code v-pre>target</code> value</th>
+<th>Runtime <code v-pre>target</code> value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>blank</code></td>
+<td><code v-pre>_blank</code></td>
+</tr>
+<tr>
+<td><code v-pre>parent</code></td>
+<td><code v-pre>_parent</code></td>
+</tr>
+<tr>
+<td><code v-pre>top</code></td>
+<td><code v-pre>_top</code></td>
+</tr>
+<tr>
+<td><code v-pre>self</code></td>
+<td><code v-pre>_self</code></td>
+</tr>
+<tr>
+<td><code v-pre>news1</code></td>
+<td><code v-pre>news1</code></td>
+</tr>
+<tr>
+<td><code v-pre>nEWs2</code></td>
+<td><code v-pre>news2</code></td>
+</tr>
+<tr>
+<td><code v-pre>recent NEWS</code></td>
+<td><code v-pre>recent-news</code></td>
+</tr>
+</tbody>
+</table>
+<p>See also the <a href="../../configuration/project/#target"><code v-pre>links.target</code></a> configuration.</p>
+<hr />
 <doc-anchor-target id="icon-and-emoji">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#icon-and-emoji">#</doc-anchor-trigger>
@@ -442,7 +498,7 @@
 <p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md" style="margin: 0px 8px 0px 0px;">
     <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex mr-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path fill-rule="evenodd" d="M12 2.5a5.5 5.5 0 00-3.096 10.047 9.005 9.005 0 00-5.9 8.18.75.75 0 001.5.045 7.5 7.5 0 0114.993 0 .75.75 0 101.499-.044 9.005 9.005 0 00-5.9-8.181A5.5 5.5 0 0012 2.5zM8 8a4 4 0 118 0 4 4 0 01-8 0z"/></g></svg></span>
     <span>User</span>
-</span><br />
+</span>
 <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Send</span>
     <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex ml-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path fill-rule="evenodd" d="M1.513 1.96a1.374 1.374 0 011.499-.21l19.335 9.215a1.146 1.146 0 010 2.07L3.012 22.25a1.374 1.374 0 01-1.947-1.46L2.49 12 1.065 3.21a1.374 1.374 0 01.448-1.25zm2.375 10.79l-1.304 8.042L21.031 12 2.584 3.208l1.304 8.042h7.362a.75.75 0 010 1.5H3.888z"/></g></svg></span>
@@ -461,7 +517,7 @@
 <p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md" style="margin: 0px 8px 0px 0px;">
     <span class="docs-emoji mr-2">&#x2764;&#xFE0F;</span>
     <span>Like</span>
-</span><br />
+</span>
 <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>Rocket</span>
     <span class="docs-emoji ml-2">&#x1F680;</span>
@@ -555,7 +611,7 @@
 </ul>
 
     </div>
-    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2021. <a href="https://object.net/">Object.NET, Inc.</a> All rights reserved.</p>
+    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2021. <a href="https://object.net/">Object.NET Inc.</a> All rights reserved.</p>
 </div>
 </footer>
 
