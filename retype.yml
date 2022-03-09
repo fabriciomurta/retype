@@ -1,11 +1,11 @@
 input: ./
 output: .retype
-url: retype.com
+base: retype
 
 branding:
   logo: /static/retype-logo.svg
   logoDark: /static/retype-logo-dark.svg
-  label: v1.11.2
+  label: v2.0.0-preview
 
 meta:
   title: " - Generate, publish, and share documentation"
