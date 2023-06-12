@@ -3,19 +3,19 @@
 <head>
     <!-- Add content to _includes/head-top.html to include here -->
 
-    <script defer data-domain="retype.com" src="https://plausible.io/js/plausible.js"></script>
+    <script defer data-domain="retype.com" src="https://plausible.io/js/script.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.737442742513">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.739909510870">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 2.4.0">
+    <meta name="generator" content="Retype 3.0.3">
 
     <!-- Primary Meta Tags -->
     <title>Retype CLI - Generate, publish, and share documentation</title>
     <meta name="title" content="Retype CLI - Generate, publish, and share documentation">
-    <meta name="description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype watch" />
+    <meta name="description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype start" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://retype.com/guides/cli/" />
@@ -24,24 +24,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://retype.com/guides/cli/">
     <meta property="og:title" content="Retype CLI - Generate, publish, and share documentation">
-    <meta property="og:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype watch">
-    <meta property="og:image" content="https://retype.com/static/add-retype-secret.png">
+    <meta property="og:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype start">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://retype.com/guides/cli/">
     <meta property="twitter:title" content="Retype CLI - Generate, publish, and share documentation">
-    <meta property="twitter:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype watch">
-    <meta property="twitter:image" content="https://retype.com/static/add-retype-secret.png">
+    <meta property="twitter:description" content="The Retype CLI is clean and simple. The majority of the time you will run just one command: retype start">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.737442742513" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.3.739909510870" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.737442742513" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.737442742513" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.737442742513" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.739909510870" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.739909510870" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.3.739909510870" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -65,7 +63,7 @@
                                 <img class="max-h-10 dark:hidden md:inline-block" src="../../static/retype-logo.svg">
                                 <img class="max-h-10 hidden dark:inline-block" src="../../static/retype-logo-dark.svg">
                             </span>
-                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v2.4</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v3.0</span>
                     </div>
         
                     <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -79,7 +77,7 @@
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                         <g fill="currentColor">
-                                            <path fill-rule="evenodd" d="M11.03 2.59a1.5 1.5 0 011.94 0l7.5 6.363a1.5 1.5 0 01.53 1.144V19.5a1.5 1.5 0 01-1.5 1.5h-5.75a.75.75 0 01-.75-.75V14h-2v6.25a.75.75 0 01-.75.75H4.5A1.5 1.5 0 013 19.5v-9.403c0-.44.194-.859.53-1.144l7.5-6.363zM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v6.25h5v-9.403L12 3.734z"/>
+                                            <path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/>
                                         </g>
                                     </svg>
                                     <span>Home</span>
@@ -89,7 +87,7 @@
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../pro/">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                         <g fill="currentColor">
-                                            <path fill-rule="evenodd" d="M12 .25a.75.75 0 01.673.418l3.058 6.197 6.839.994a.75.75 0 01.415 1.279l-4.948 4.823 1.168 6.811a.75.75 0 01-1.088.791L12 18.347l-6.117 3.216a.75.75 0 01-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 01.416-1.28l6.838-.993L11.328.668A.75.75 0 0112 .25zm0 2.445L9.44 7.882a.75.75 0 01-.565.41l-5.725.832 4.143 4.038a.75.75 0 01.215.664l-.978 5.702 5.121-2.692a.75.75 0 01.698 0l5.12 2.692-.977-5.702a.75.75 0 01.215-.664l4.143-4.038-5.725-.831a.75.75 0 01-.565-.41L12 2.694z"/>
+                                            <path d="M12 .25a.75.75 0 0 1 .673.418l3.058 6.197 6.839.994a.75.75 0 0 1 .415 1.279l-4.948 4.823 1.168 6.811a.751.751 0 0 1-1.088.791L12 18.347l-6.117 3.216a.75.75 0 0 1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 1 .416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 1-.565-.41L12 2.694Z"/>
                                         </g>
                                     </svg>
                                     <span>Pricing</span>
@@ -99,7 +97,7 @@
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/retypeapp/retype/issues" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                         <g fill="currentColor">
-                                            <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v9.5C0 13.216.784 14 1.75 14H3v1.543a1.457 1.457 0 002.487 1.03L8.061 14h6.189A1.75 1.75 0 0016 12.25v-9.5A1.75 1.75 0 0014.25 1H1.75zM1.5 2.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v9.5a.25.25 0 01-.25.25h-6.5a.75.75 0 00-.53.22L4.5 15.44v-2.19a.75.75 0 00-.75-.75h-2a.25.25 0 01-.25-.25v-9.5z"/><path d="M22.5 8.75a.25.25 0 00-.25-.25h-3.5a.75.75 0 010-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0122.25 20H21v1.543a1.457 1.457 0 01-2.487 1.03L15.939 20H10.75A1.75 1.75 0 019 18.25v-1.465a.75.75 0 011.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 01.53.22l2.72 2.72v-2.19a.75.75 0 01.75-.75h2a.25.25 0 00.25-.25v-9.5z"/>
+                                            <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                         </g>
                                     </svg>
                                     <span>Issues</span>
@@ -195,7 +193,7 @@
                                         <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                 <g fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M11.03 2.59a1.5 1.5 0 011.94 0l7.5 6.363a1.5 1.5 0 01.53 1.144V19.5a1.5 1.5 0 01-1.5 1.5h-5.75a.75.75 0 01-.75-.75V14h-2v6.25a.75.75 0 01-.75.75H4.5A1.5 1.5 0 013 19.5v-9.403c0-.44.194-.859.53-1.144l7.5-6.363zM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v6.25h5v-9.403L12 3.734z"/>
+                                                    <path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/>
                                                 </g>
                                             </svg>
                                             <span>Home</span>
@@ -205,7 +203,7 @@
                                         <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../pro/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                 <g fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M12 .25a.75.75 0 01.673.418l3.058 6.197 6.839.994a.75.75 0 01.415 1.279l-4.948 4.823 1.168 6.811a.75.75 0 01-1.088.791L12 18.347l-6.117 3.216a.75.75 0 01-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 01.416-1.28l6.838-.993L11.328.668A.75.75 0 0112 .25zm0 2.445L9.44 7.882a.75.75 0 01-.565.41l-5.725.832 4.143 4.038a.75.75 0 01.215.664l-.978 5.702 5.121-2.692a.75.75 0 01.698 0l5.12 2.692-.977-5.702a.75.75 0 01.215-.664l4.143-4.038-5.725-.831a.75.75 0 01-.565-.41L12 2.694z"/>
+                                                    <path d="M12 .25a.75.75 0 0 1 .673.418l3.058 6.197 6.839.994a.75.75 0 0 1 .415 1.279l-4.948 4.823 1.168 6.811a.751.751 0 0 1-1.088.791L12 18.347l-6.117 3.216a.75.75 0 0 1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 1 .416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 1-.565-.41L12 2.694Z"/>
                                                 </g>
                                             </svg>
                                             <span>Pricing</span>
@@ -215,7 +213,7 @@
                                         <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/retypeapp/retype/issues" target="_blank">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                 <g fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v9.5C0 13.216.784 14 1.75 14H3v1.543a1.457 1.457 0 002.487 1.03L8.061 14h6.189A1.75 1.75 0 0016 12.25v-9.5A1.75 1.75 0 0014.25 1H1.75zM1.5 2.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v9.5a.25.25 0 01-.25.25h-6.5a.75.75 0 00-.53.22L4.5 15.44v-2.19a.75.75 0 00-.75-.75h-2a.25.25 0 01-.25-.25v-9.5z"/><path d="M22.5 8.75a.25.25 0 00-.25-.25h-3.5a.75.75 0 010-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0122.25 20H21v1.543a1.457 1.457 0 01-2.487 1.03L15.939 20H10.75A1.75 1.75 0 019 18.25v-1.465a.75.75 0 011.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 01.53.22l2.72 2.72v-2.19a.75.75 0 01.75-.75h2a.25.25 0 00.25-.25v-9.5z"/>
+                                                    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                                 </g>
                                             </svg>
                                             <span>Issues</span>
@@ -247,8 +245,8 @@
             <div class="grow min-w-0 dark:bg-dark-850">
                 <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
                 <div class="flex">
-                    <div class="grow min-w-0 px-6 md:px-16">
-                        <main class="relative pt-6 pb-16">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
                             <div class="docs-markdown" id="docs-content">
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
@@ -261,7 +259,7 @@
         <span>Retype CLI</span>
     </h1>
 </doc-anchor-target>
-<p>The Retype CLI is clean and simple. The majority of the time you will run just one command: <code v-pre>retype watch</code></p>
+<p>The Retype CLI is clean and simple. The majority of the time you will run just one command: <code v-pre>retype start</code></p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -275,27 +273,49 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Be sure to review the <a href="../../configuration/project/">project</a> options available within the <code v-pre>retype.yml</code> as it does unlock a lot more power, flexibility, and customization.</p>
+<p>Be sure to review the <a href="../../configuration/project/">project</a> options available within the <strong>retype.yml</strong> as it does unlock more power, flexibility, and customization.</p>
         </div>
     </div>
 </div>
-<p>The <code v-pre>--help</code> option can be passed with any command to get additional details, for instance <code v-pre>retype watch --help</code> will return all options for the <code v-pre>retype watch</code> command.</p>
+<p>The <code v-pre>--help</code> option can be passed with any command to get additional details, for instance <code v-pre>retype start --help</code> will return all options for the <code v-pre>retype start</code> command.</p>
 <p>The command <code v-pre>retype --version</code> will return the current version number of your Retype install. See all public Retype <a href="https://github.com/retypeapp/retype/releases">releases</a>.</p>
 <p>Let&#x27;s go through each of the <code v-pre>retype</code> CLI commands and be sure to check out the <a href="../getting-started/">Getting Started</a> guide for step by instructions on using each of these commands.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Retype CLI
+
+Usage:
+  retype [command] [options]
+
+Options:
+  --info          Display Retype information
+  --version       Show version information
+  -?, -h, --help  Show help and usage information
+
+Commands:
+  start &lt;path&gt;  Build and serve the project using a local development only web server
+  init  &lt;path&gt;  Initialize a new Retype project
+  build &lt;path&gt;  Generate a static website from the project
+  serve &lt;path&gt;  Serve the website in a local development only web server
+  clean &lt;path&gt;  Clean the output directory
+  wallet        Manage Retype secret license keys</code></pre>
+</doc-codeblock></div>
 <hr />
-<doc-anchor-target id="retype-watch">
+<doc-anchor-target id="retype-start">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-watch">#</doc-anchor-trigger>
-        <span><code v-pre>retype watch</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-start">#</doc-anchor-trigger>
+        <span><code v-pre>retype start</code></span>
     </h2>
 </doc-anchor-target>
-<p>The <code v-pre>retype watch</code> command is the easiest way to get your project built and running in a browser within seconds, although <code v-pre>retype watch</code> is just shortcut for a sequence of other commands that could be executed individually.</p>
+<p>The <code v-pre>retype start</code> command is the easiest way to get your project built and running in a browser within seconds.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype init
-retype build
-retype run</code></pre>
+<pre class="language-none"><code v-pre class="language-none">retype start</code></pre>
 </doc-codeblock></div>
-<p>The <code v-pre>retype watch</code> command will also watch for file changes and will automatically update the website in your web browser with the updated page.</p>
+<p>The <code v-pre>retype start</code> command will also watch for file changes and will automatically update the website in your web browser with the updated page.</p>
+<p>The <code v-pre>retype start</code> command automatically opens the default web browser on your machine and loads the website into the browser. You can surpress this automatic opening of the default web browser by passing the <code v-pre>--no-open</code> flag or its alias <code v-pre>-n</code>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype start -n</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="options">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
@@ -303,21 +323,23 @@ retype run</code></pre>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">watch:
-  Serve a static website, watch for file changes
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Build and serve the project using a local development only web server
 
 Usage:
-  retype watch [options] [&lt;path&gt;]
+  retype start [&lt;path&gt;] [options]
 
 Arguments:
-  &lt;path&gt;    Path to the project root or a Retype config [Optional]
+  &lt;path&gt;  Path to the project root or project config file [Optional]
 
 Options:
-  -a, --api              Watch for API changes
-  --license &lt;license&gt;    Retype license key
+  --secret &lt;secret&gt;      Retype license key
+  --password &lt;password&gt;  Private page password
   --host &lt;host&gt;          Custom Host name or IP address
   --port &lt;port&gt;          Custom TCP port
-  -v, --verbose          Verbose logging
+  -n, --no-open          Prevent default web browser from being opened
+  -v, --verbose          Enable verbose logging
+  -a, --api              Watch for API changes
   -?, -h, --help         Show help and usage information</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
@@ -332,9 +354,9 @@ Options:
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>While it is technically possible to host your website publicly using <code v-pre>retype watch</code> and the web server built into Retype, <strong>DON&#x27;T DO IT</strong>.</p>
-<p>You should use a dedicated website hosting service, such as <a href="../../hosting/github-pages/">GitHub Pages</a>, or any other web hosting service.</p>
-<p>If you <em>really really really</em> want to try public hosting using the built in web server, use <doc-anchor-trigger to="#retype-run"><code v-pre>retype run</code></doc-anchor-trigger>.</p>
+<p>While it is technically possible to host your website publicly using <code v-pre>retype start</code> and the web server built into Retype, <strong>DON&#x27;T DO IT</strong>.</p>
+<p>You should use a dedicated website hosting service, such as <a href="../../hosting/github-pages/">GitHub Pages</a>, <a href="https://www.netlify.com/">Netlify</a>, or absolutely any other web hosting service.</p>
+<p>If you <em>really really really</em> want to try public hosting using the built in web server, use <doc-anchor-trigger to="#retype-serve"><code v-pre>retype serve</code></doc-anchor-trigger>.</p>
         </div>
     </div>
 </div>
@@ -345,12 +367,12 @@ Options:
         <span><code v-pre>retype init</code></span>
     </h2>
 </doc-anchor-target>
-<p>You can manually create a <code v-pre>retype.yml</code> file, or you can have Retype stub out a basic file with a few initial values by running the command <code v-pre>retype init</code>.</p>
-<p>From your command line, navigate to any folder location where you have one or more Markdown <code v-pre>.md</code> files, such as the root of a GitHub project, then run the following command:</p>
+<p>You can manually create a <strong>retype.yml</strong> file, or you can have Retype stub out a basic file with a few initial values by running the command <code v-pre>retype init</code>.</p>
+<p>From your command line, navigate to any folder location where you have one or more Markdown <strong>.md</strong> files, such as the root of a GitHub project, then run the following command:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">retype init</code></pre>
 </doc-codeblock></div>
-<p>Calling the <code v-pre>retype init</code> command will create a simple <code v-pre>retype.yml</code> file with the following default values:</p>
+<p>Calling the <code v-pre>retype init</code> command will create a simple <strong>retype.yml</strong> file with the following default values:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Sample retype.yml</div>
 <pre class="language-yaml"><code v-pre class="language-yaml">input: .
@@ -363,7 +385,7 @@ links:
   - text: Getting Started
     link: https://retype.com/guides/getting-started/
 footer:
-  copyright: &quot;&amp;copy; Copyright . All rights reserved.&quot;</code></pre>
+  copyright: &quot;&amp;copy; Copyright {{ year }}. All rights reserved.&quot;</code></pre>
 </doc-codeblock></div>
 <p>All the configs are optional, but the above sample demonstrates a few of the options you will typically want to start with. See the <a href="../../configuration/project/">project</a> configuration docs for a full list of all options.</p>
 <p>To change the title of the project, revise the <code v-pre>branding.title</code> config. For instance, let&#x27;s change to <code v-pre>Company X</code>:</p>
@@ -371,8 +393,8 @@ footer:
 <pre class="language-yaml"><code v-pre class="language-yaml">branding:
   title: Company X</code></pre>
 </doc-codeblock></div>
-<p>If there is already a <code v-pre>retype.yml</code> file within the project, runnin the <code v-pre>retype init</code> command will not create a new <code v-pre>retype.yml</code> file.</p>
-<p>The <code v-pre>retype.yml</code> file is not <em>actually</em> required, but you will want to make custom <a href="../../configuration/project/">configurations</a> to your project and this is how those instructions are passed to Retype.</p>
+<p>If there is already a <strong>retype.yml</strong> file within the project, running the <code v-pre>retype init</code> command will not create a new <strong>retype.yml</strong> file.</p>
+<p>The <strong>retype.yml</strong> file is not <em>actually</em> required, but you will want to make custom <a href="../../configuration/project/">configurations</a> to your project and this is how those instructions are passed to Retype.</p>
 <doc-anchor-target id="options-1">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-1">#</doc-anchor-trigger>
@@ -380,70 +402,19 @@ footer:
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">init:
+<pre class="language-none"><code v-pre class="language-none">Description:
   Initialize a new Retype project
 
 Usage:
-  retype init [options] [&lt;path&gt;]
+  retype init [&lt;path&gt;] [options]
 
 Arguments:
-  &lt;path&gt;    Path to the project root [Optional]
+  &lt;path&gt;  Path to the project root [Optional]
 
 Options:
-  --override &lt;override&gt;    JSON configuration overriding Retype config values
-  -v, --verbose            Verbose logging
-  -?, -h, --help           Show help and usage information</code></pre>
-</doc-codeblock></div>
-<hr />
-<doc-anchor-target id="retype-build">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-build">#</doc-anchor-trigger>
-        <span><code v-pre>retype build</code></span>
-    </h2>
-</doc-anchor-target>
-<p>To generate your new website, run the command <code v-pre>retype build</code>. This command builds a new website based upon the <code v-pre>.md</code> files within the <a href="../../configuration/project/"><code v-pre>input</code></a> location.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype build</code></pre>
-</doc-codeblock></div>
-<p>Within just a few seconds, Retype will create a new website and save to the <code v-pre>output</code> location as defined in the <code v-pre>retype.yml</code>. By default, the <code v-pre>output</code> location is a new folder named <code v-pre>.retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
-<p>If the <code v-pre>.md</code> documentation files for your project were located not in the root (<code v-pre>.</code>) but within a <code v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code v-pre>website</code> folder, you would use the following config:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">input: docs
-output: website</code></pre>
-</doc-codeblock></div>
-<p>Let&#x27;s say you wanted the your new Retype website to run from within a <code v-pre>docs</code> folder which was then also inside of a root <code v-pre>website</code> folder, then you would configure:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">input: docs
-output: website/docs</code></pre>
-</doc-codeblock></div>
-<p>If you are hosting your website using <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a> AND you wanted to host your website from the <code v-pre>docs</code> folder, you could then move your <code v-pre>.md</code> files into a different subfolder and configure as follows:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-yaml"><code v-pre class="language-yaml">input: src
-output: docs</code></pre>
-</doc-codeblock></div>
-<p>The <code v-pre>input</code> and <code v-pre>output</code> configs provide unlimited flexibility to instruct Retype on where to get your project content and configurations files and where to output the generated website.</p>
-<doc-anchor-target id="options-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#options-2">#</doc-anchor-trigger>
-        <span>Options</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">build:
-  Generate a static website
-
-Usage:
-  retype build [options] [&lt;path&gt;]
-
-Arguments:
-  &lt;path&gt;    Path to the project root or a Retype config [Optional]
-
-Options:
-  --output &lt;output&gt;        Custom path to the output directory
-  --secret &lt;secret&gt;        Retype secret license key
-  --override &lt;override&gt;    JSON configuration overriding Retype config values
-  -v, --verbose            Verbose logging
-  -?, -h, --help           Show help and usage information</code></pre>
+  --override &lt;override&gt;  JSON configuration overriding Retype config values
+  -v, --verbose          Enable verbose logging
+  -?, -h, --help         Show help and usage information</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="--override">
     <h3>
@@ -453,18 +424,79 @@ Options:
 </doc-anchor-target>
 <p>See the <doc-anchor-trigger to="#retype---override"><code v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
 <hr />
-<doc-anchor-target id="retype-run">
+<doc-anchor-target id="retype-build">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-run">#</doc-anchor-trigger>
-        <span><code v-pre>retype run</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-build">#</doc-anchor-trigger>
+        <span><code v-pre>retype build</code></span>
     </h2>
 </doc-anchor-target>
-<p>The <code v-pre>retype run</code> command starts up your new Retype website and opens in a web browser.</p>
+<p>To generate your new website, run the command <code v-pre>retype build</code>. This command builds a new website based upon the <strong>.md</strong> files within the <a href="../../configuration/project/"><code v-pre>input</code></a> location.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype run</code></pre>
+<pre class="language-none"><code v-pre class="language-none">retype build</code></pre>
 </doc-codeblock></div>
-<p>The website generated by Retype is a static HTML and JavaScript site. No special server-side hosting, such as PHP or Ruby is required. A Retype generated website can be hosted on any web server or hosting service, such a <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a>.</p>
-<p>You can also use any other local web server instead of <code v-pre>retype run</code>. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple options could be <a href="https://www.npmjs.com/package/live-server">live-server</a> or <a href="https://www.npmjs.com/package/static-server">static-server</a>.</p>
+<p>Within just a few seconds, Retype will create a new website and save to the <code v-pre>output</code> location as defined in the <strong>retype.yml</strong>. By default, the <code v-pre>output</code> location is a new folder named <code v-pre>.retype</code>. You can rename to whatever you like, or adjust the path to generate the output to any other location, such as another sub-folder.</p>
+<p>If the <strong>.md</strong> documentation files for your project were not located in the root (<code v-pre>.</code>) but within a <code v-pre>docs</code> subfolder AND you wanted to have Retype send the output to a <code v-pre>website</code> folder, you would use the following config:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">input: docs
+output: website</code></pre>
+</doc-codeblock></div>
+<p>Let&#x27;s say you wanted the your new Retype website to run from within a <code v-pre>docs</code> folder which was then also inside of a root <code v-pre>website</code> folder, then you would configure:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">input: docs
+output: website/docs</code></pre>
+</doc-codeblock></div>
+<p>If you are hosting your website using <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a> AND you wanted to host your website from the <code v-pre>docs</code> folder, you could then move your <strong>.md</strong> files into a different subfolder and configure as follows:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">input: src
+output: docs</code></pre>
+</doc-codeblock></div>
+<p>The <code v-pre>input</code> and <code v-pre>output</code> configs provide unlimited flexibility to instruct Retype on where to get your project content and configurations files, and where to output the generated website.</p>
+<doc-anchor-target id="options-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-2">#</doc-anchor-trigger>
+        <span>Options</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Generate a static website from the project
+
+Usage:
+  retype build [&lt;path&gt;] [options]
+
+Arguments:
+  &lt;path&gt;  Path to the project root or project config file [Optional]
+
+Options:
+  --output &lt;output&gt;      Custom path to the output directory
+  --secret &lt;secret&gt;      Retype license key
+  --password &lt;password&gt;  Private page password
+  --override &lt;override&gt;  JSON configuration overriding project config values
+  -w, --watch            Watch for file changes
+  -v, --verbose          Enable verbose logging
+  -a, --api              Watch for API changes
+  -?, -h, --help         Show help and usage information</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="--override-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#--override-1">#</doc-anchor-trigger>
+        <span><code v-pre>--override</code></span>
+    </h3>
+</doc-anchor-target>
+<p>See the <doc-anchor-trigger to="#retype---override"><code v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
+<hr />
+<doc-anchor-target id="retype-serve">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-serve">#</doc-anchor-trigger>
+        <span><code v-pre>retype serve</code></span>
+    </h2>
+</doc-anchor-target>
+<p>The <code v-pre>retype serve</code> command starts a local development only web server and hosts your website.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">retype serve</code></pre>
+</doc-codeblock></div>
+<p>The website generated by Retype is a static HTML and JavaScript site. No special server-side hosting, such as Node, PHP, or Ruby is required. A Retype generated website can be hosted on any web server or hosting service, such a <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a>, <a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>, <a href="https://www.netlify.com/">Netlify</a>, or <a href="https://pages.cloudflare.com/">Cloudflare Pages</a>.</p>
+<p>You can also use any other local web server instead of <code v-pre>retype serve</code>. Retype only includes a web server out of convenience, not requirement. Any web server will do. A couple other simple web server options could be <a href="https://www.npmjs.com/package/live-server">live-server</a> or <a href="https://www.npmjs.com/package/static-server">static-server</a>.</p>
 <doc-anchor-target id="options-3">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options-3">#</doc-anchor-trigger>
@@ -472,20 +504,59 @@ Options:
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">run:
-  Serve a static website
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Serve the website in a local development only web server
 
 Usage:
-  retype run [options] [&lt;path&gt;]
+  retype serve [&lt;path&gt;] [options]
 
 Arguments:
-  &lt;path&gt;    Path to the project root or a Retype config [Optional]
+  &lt;path&gt;  Path to the project root or project config file [Optional]
 
 Options:
-  --host &lt;host&gt;     Custom Host name or IP address
-  --port &lt;port&gt;     Custom TCP port
-  -v, --verbose     Verbose logging
-  -?, -h, --help    Show help and usage information</code></pre>
+  --host &lt;host&gt;   Custom Host name or IP address
+  --port &lt;port&gt;   Custom TCP port
+  -l, --live      Live reload open browsers when a change in the project output is detected
+  -v, --verbose   Enable verbose logging
+  -?, -h, --help  Show help and usage information</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="--override-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#--override-2">#</doc-anchor-trigger>
+        <span><code v-pre>--override</code></span>
+    </h3>
+</doc-anchor-target>
+<p>See the <doc-anchor-trigger to="#retype---override"><code v-pre>--override</code></doc-anchor-trigger> docs below for additional details.</p>
+<hr />
+<doc-anchor-target id="retype-clean">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retype-clean">#</doc-anchor-trigger>
+        <span><code v-pre>retype clean</code></span>
+    </h2>
+</doc-anchor-target>
+<p>The <code v-pre>retype clean</code> command will delete the Retype managed files from the <code v-pre>output</code> folder.</p>
+<p>If your manually add files or another process adds files to the <code v-pre>output</code>, those files will not be removed by <code v-pre>retype clean</code>.</p>
+<p>Including the <code v-pre>--dry</code> flag triggers a dry run for the command and will list the files that <em><strong>would be</strong></em> deleted if the <code v-pre>--dry</code> flag was not included.</p>
+<doc-anchor-target id="options-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-4">#</doc-anchor-trigger>
+        <span>Options</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Clean the output directory
+
+Usage:
+  retype clean [&lt;path&gt;] [options]
+
+Arguments:
+  &lt;path&gt;  Path to the project root or project config file [Optional]
+
+Options:
+  --dry           List files and directories that would be deleted
+  -v, --verbose   Enable verbose logging
+  -?, -h, --help  Show help and usage information</code></pre>
 </doc-codeblock></div>
 <hr />
 <doc-anchor-target id="retype-wallet">
@@ -495,7 +566,7 @@ Options:
     </h2>
 </doc-anchor-target>
 <p>The <code v-pre>retype wallet</code> command is for managing Retype license keys.</p>
-<p>Retype license keys are stored within an encrypted wallet file called <code v-pre>license.dat</code>.</p>
+<p>Retype license keys are stored within an encrypted wallet file called <strong>license.dat</strong>.</p>
 <p>To add a Retype license key to your wallet, run the following command:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">retype wallet --add &lt;your-license-key-here&gt;</code></pre>
@@ -511,43 +582,26 @@ Options:
         <span>RETYPE_SECRET</span>
     </h3>
 </doc-anchor-target>
-<p>A Retype license key can also be configured as a secret Environment variable and the key is NOT stored in a wallet.</p>
-<p>Configuring the <code v-pre>RETYPE_SECRET</code> secret is the prefered technique for configuring a license key with a GitHub Pages project that is built and deployed using a <a href="../github-actions/">GitHub Action</a>.</p>
-<p>The <a href="../github-actions/#retype_secret">RETYPE_SECRET</a> configuration must also be added to your <code v-pre>.github/workflows/retype.yml</code> file.</p>
-<p>You can add a new repository secret to your GitHub repository following the <code v-pre>/settings/secrets/actions</code> path. The URL should be:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">https://github.com/&lt;your-organization&gt;/&lt;your-project&gt;/settings/secrets/actions</code></pre>
-</doc-codeblock></div>
-<p><figure class="content-center">
-    <img src="../../static/add-retype-secret.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>Once the <code v-pre>RETYPE_SECRET</code> secret is added, you should see the following and your Retype project will now build using your license key:</p>
-<p><figure class="content-center">
-    <img src="../../static/retype-repository-secret.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<doc-anchor-target id="options-4">
+<p>See how to configure a <a href="../../configuration/envvars/#retype_secret"><code v-pre>RETYPE_SECRET</code></a> Environment variable for an option to set your project license key during runtime.</p>
+<doc-anchor-target id="options-5">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#options-4">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#options-5">#</doc-anchor-trigger>
         <span>Options</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">wallet:
-  Manage secret license keys
+<pre class="language-none"><code v-pre class="language-none">Description:
+  Manage Retype secret license keys
 
 Usage:
   retype wallet [options]
 
 Options:
-  --add &lt;key&gt;          Add a license key to the wallet
-  --remove &lt;key&gt;       Remove a license key from the wallet
-  --list               List the stored license keys
-  --clear              Clear the wallet
-  -?, -h, --help       Show help and usage information</code></pre>
+  --add &lt;secret&gt;     Add a secret license key to the wallet
+  --remove &lt;secret&gt;  Remove a secret license key from the wallet
+  --list             List the stored secret license keys
+  --clear            Clear the wallet
+  -?, -h, --help     Show help and usage information</code></pre>
 </doc-codeblock></div>
 <hr />
 <doc-anchor-target id="retype---override">
@@ -556,10 +610,10 @@ Options:
         <span><code v-pre>retype --override</code></span>
     </h2>
 </doc-anchor-target>
-<p>The Retype CLI <doc-anchor-trigger to="#retype-build"><code v-pre>build</code></doc-anchor-trigger> command supports the <code v-pre>--override</code> option to allow dynamically modifying <code v-pre>retype.yml</code> project configurations during build.</p>
-<p>The <code v-pre>--override</code> option is helpful in certain scenarios such as generating websites requiring different <code v-pre>url</code> configs, without the need to maintain several <code v-pre>retype.yml</code> files.</p>
+<p>The Retype CLI <doc-anchor-trigger to="#retype-build"><code v-pre>build</code></doc-anchor-trigger> command supports the <code v-pre>--override</code> option to allow dynamically modifying <strong>retype.yml</strong> project configurations during build.</p>
+<p>The <code v-pre>--override</code> option is helpful in certain scenarios such as generating websites requiring different <code v-pre>url</code> configs, without the need to maintain several <strong>retype.yml</strong> files.</p>
 <p>The CLI expects an escaped json object to be passed as the option value.</p>
-<p>Retype merges the <code v-pre>retype.yml</code> configuration with the provided json object in a way that colliding configurations from the json override will overwrite the <code v-pre>retype.yml</code> values.</p>
+<p>Retype merges the <strong>retype.yml</strong> configuration with the provided json object in a way that colliding configurations from the json override will overwrite the <strong>retype.yml</strong> values.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -583,9 +637,9 @@ Options:
         <span>Basic config</span>
     </h3>
 </doc-anchor-target>
-<p>Using the following <code v-pre>retype.yml</code> project configuration file as an example:</p>
+<p>Using the following <strong>retype.yml</strong> project configuration file as an example:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title"><code v-pre>retype.yml</code></div>
+<div class="codeblock-title"><strong>retype.yml</strong></div>
 <pre class="language-yaml"><code v-pre class="language-yaml">url: https://retype.com</code></pre>
 </doc-codeblock></div>
 <p>The command below will build the website with the url <code v-pre>https://beta.retype.com</code>.</p>
@@ -599,9 +653,9 @@ Options:
     </h3>
 </doc-anchor-target>
 <p>The following sample demonstrates overriding a more complex configuration object.</p>
-<p>Using the following <code v-pre>retype.yml</code> project configuration file as an example, let&#x27;s change the <a href="../../configuration/project/#label"><code v-pre>label</code></a> to <code v-pre>beta</code>, instead of <code v-pre>v1.10</code>.</p>
+<p>Using the following <strong>retype.yml</strong> project configuration file as an example, let&#x27;s change the <a href="../../configuration/project/#label"><code v-pre>label</code></a> to <code v-pre>beta</code>, instead of <code v-pre>v1.10</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title"><code v-pre>retype.yml</code></div>
+<div class="codeblock-title"><strong>retype.yml</strong></div>
 <pre class="language-yaml"><code v-pre class="language-yaml">branding:
   title: Retype
   label: v1.10</code></pre>
@@ -622,7 +676,7 @@ Options:
 </doc-anchor-target>
 <p>The following command will add a <code v-pre>GitHub</code> link to the list of <a href="../../configuration/project/#links"><code v-pre>links</code></a>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title"><code v-pre>retype.yml</code></div>
+<div class="codeblock-title"><strong>retype.yml</strong></div>
 <pre class="language-yaml"><code v-pre class="language-yaml">links:
   - link: Retype
     text: https://retype.com</code></pre>
@@ -697,7 +751,7 @@ Options:
                                             <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="../../about/">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                     <g fill="currentColor">
-                                                        <path d="M10.97 8.265a1.45 1.45 0 00-.487.57.75.75 0 01-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 011.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 00-.435.409v1.37a.75.75 0 11-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 00-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265zM13 17a1 1 0 11-2 0 1 1 0 012 0z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z"/>
+                                                        <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
                                                     </g>
                                                 </svg>
                                                 <span>About</span>
@@ -707,7 +761,7 @@ Options:
                                             <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="../../license/">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                     <g fill="currentColor">
-                                                        <path d="M16.53 9.78a.75.75 0 00-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5-5z"/><path fill-rule="evenodd" d="M12.54.637a1.75 1.75 0 00-1.08 0L3.21 3.312A1.75 1.75 0 002 4.976V10c0 6.19 3.77 10.705 9.401 12.83.386.145.812.145 1.198 0C18.229 20.704 22 16.19 22 10V4.976c0-.759-.49-1.43-1.21-1.664L12.54.637zm-.617 1.426a.25.25 0 01.154 0l8.25 2.676a.25.25 0 01.173.237V10c0 5.461-3.28 9.483-8.43 11.426a.2.2 0 01-.14 0C6.78 19.483 3.5 15.46 3.5 10V4.976c0-.108.069-.203.173-.237l8.25-2.676z"/>
+                                                        <path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"/><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"/>
                                                     </g>
                                                 </svg>
                                                 <span>License</span>
